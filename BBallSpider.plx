@@ -6,7 +6,7 @@ use WWW::Mechanize;
 use DBI;
 
 my $dbh;
-$dbh = DBI->connect("DBI:mysql:database=bball;host=localhost", "root", "Mbiaf1979")
+$dbh = DBI->connect("DBI:mysql:database=bball;host=localhost", "user", "pass")
 or die $DBI::errstr;
 
 my @date = (20121109 .. 20121199);
